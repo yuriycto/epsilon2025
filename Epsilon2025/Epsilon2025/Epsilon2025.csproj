@@ -31,506 +31,678 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PX.ACHPlugIn">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ACHPlugIn.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ACHPlugInBase">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ACHPlugInBase.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AddressValidator">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AddressValidator.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AddressValidator.AvalaraRest">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AddressValidator.AvalaraRest.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AddressValidator.AvalaraSoap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AddressValidator.AvalaraSoap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AddressValidator.VertexSoap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AddressValidator.VertexSoap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ApacheKafkaClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ApacheKafkaClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.ContractBased">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.ContractBased.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.ContractBased.Common">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.ContractBased.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Mobile">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Mobile.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Mobile.Model">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Mobile.Model.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.OData">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.OData.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.OData.GI.Legacy">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.OData.GI.Legacy.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.OData.v4">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.OData.v4.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Outlook">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Outlook.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.ReportDesigner">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.ReportDesigner.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Reports">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Reports.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Shared">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Shared.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.TSBasedScreen">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.TSBasedScreen.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.TSBasedScreen.Objects">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.TSBasedScreen.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Web">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Web.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Webhooks">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Webhooks.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Webhooks.Abstractions">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Webhooks.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Api.Webhooks.Customization">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Api.Webhooks.Customization.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Archiver">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Archiver.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AspNetCore">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AspNetCore.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AspNetCore.Abstractions">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AspNetCore.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AspNetCore3.Backport">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AspNetCore3.Backport.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AssemblyPatcher">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AssemblyPatcher.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AutocompleteGenerator.Dataset">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AutocompleteGenerator.Dataset.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AutocompleteGenerator.Model">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AutocompleteGenerator.Model.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AutocompleteGenerator.ModelSelection">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AutocompleteGenerator.ModelSelection.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AutocompleteGenerator.Scoring">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AutocompleteGenerator.Scoring.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.AutocompleteGenerator.UI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.AutocompleteGenerator.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BACSHSBCPlugIn">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BACSHSBCPlugIn.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BACSLloydsPlugIn">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BACSLloydsPlugIn.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BankFeed">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BankFeed.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BarcodeProcessing">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BarcodeProcessing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BootLoader">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BootLoader.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BulkInsert">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BulkInsert.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.BusinessProcess">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.BusinessProcess.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Caching">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Caching.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CarrierService">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CarrierService.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CCProcessing">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CCProcessing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CCProcessingBase">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CCProcessingBase.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CCProcessingService">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CCProcessingService.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CCProcessingUtility">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CCProcessingUtility.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CloudServices">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CloudServices.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CloudServices.Abstractions">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CloudServices.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CloudServices.DocumentRecognition">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CloudServices.DocumentRecognition.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CommandLine">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CommandLine.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Commerce.Amazon">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Commerce.Amazon.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Commerce.BigCommerce">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Commerce.BigCommerce.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Commerce.Core">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Commerce.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Commerce.Objects">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Commerce.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Commerce.Shopify">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Commerce.Shopify.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Common">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Common.Mail">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Common.Mail.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Common.Parser">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Common.Parser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Common.Std">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Common.Std.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CR.OutlookAddIn">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CR.OutlookAddIn.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.CS.Contracts">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.CS.Contracts.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DacSchemaBrowser">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DacSchemaBrowser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DacSchemaBrowser.Views">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DacSchemaBrowser.Views.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Dashboards">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Dashboards.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Dashboards.Caching">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Dashboards.Caching.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Dashboards.Widgets">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Dashboards.Widgets.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Data">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Data.AspNetCore">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Data.AspNetCore.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Data.BQL.Dynamic">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Data.BQL.Dynamic.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Data.BQL.Fluent">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Data.BQL.Fluent.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DataSync">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DataSync.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DataSync.Core">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DataSync.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DataSync.HubSpot">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DataSync.HubSpot.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DataSync.PaymentProcessing">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DataSync.PaymentProcessing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DataSync.SendGrid">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DataSync.SendGrid.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.DbServices">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.DbServices.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.EasyPostCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.EasyPostCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.EFTPlugIn">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.EFTPlugIn.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Export">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Export.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ExternalCarriersCommon">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ExternalCarriersCommon.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ExternalCarriersHelper">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ExternalCarriersHelper.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.FedExCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.FedExCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.FedExCarrier.XmlSerializers">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.FedExCarrier.XmlSerializers.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.FedExRestCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.FedExRestCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.GIROPaymentsExport">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.GIROPaymentsExport.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.GLAnomalyDetection">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.GLAnomalyDetection.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Hosting">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Hosting.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Hosting.SystemWeb">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Hosting.SystemWeb.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.IdentityServer.UI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.IdentityServer.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.IdentityServer.UI.Views">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.IdentityServer.UI.Views.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.LicensePolicy">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.LicensePolicy.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.LocalFileStorage">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.LocalFileStorage.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Logging.Interfaces">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Logging.Interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Mail">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Mail.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MessageBus">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MessageBus.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MessageBus.Abstractions">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MessageBus.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Microsoft.AspNetCore.OData">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Microsoft.AspNetCore.OData.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ML">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ML.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ML.GI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ML.GI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ML.UI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ML.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MongoClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MongoClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MSGraph">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MSGraph.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MSTeams">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MSTeams.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.MySql">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.MySql.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.OAuthClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.OAuthClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.AM">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.AM.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.FS">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.FS.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.Localizations.CA">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.Localizations.CA.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.Localizations.GB">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.Localizations.GB.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.PJ">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.PJ.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.PM">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.PM.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.PM.ChangeRequest">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.PM.ChangeRequest.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.PM.MaterialManagement">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.PM.MaterialManagement.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Objects.PR">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Objects.PR.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Oidc.Interfaces">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Oidc.Interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.OidcClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.OidcClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.OidcClient.Views">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.OidcClient.Views.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Olap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Olap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Owin">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Owin.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Owin.Interfaces">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Owin.Interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.PacejetCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.PacejetCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Payroll">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Payroll.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Payroll.WebServiceClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Payroll.WebServiceClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.PushNotifications">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.PushNotifications.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.RabbitMQClient">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.RabbitMQClient.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Reports">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Reports.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Reports.ARm">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Reports.ARm.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ResourceGovernor">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ResourceGovernor.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ResourceGovernor.HealthCheck">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ResourceGovernor.HealthCheck.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Salesforce">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Salesforce.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Scenarios">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Scenarios.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.ShipEngineCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.ShipEngineCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.SiteMap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.SiteMap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.SmsProvider.AWS">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.SmsProvider.AWS.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.SmsProvider.Core">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.SmsProvider.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.SmsProvider.Twilio">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.SmsProvider.Twilio.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.SmsProvider.UI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.SmsProvider.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.StampsCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.StampsCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TableStorage">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TableStorage.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TaxProvider">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TaxProvider.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TaxProvider.AvalaraRest">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TaxProvider.AvalaraRest.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TaxProvider.AvalaraSoap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TaxProvider.AvalaraSoap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TaxProvider.VertexSoap">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TaxProvider.VertexSoap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Telemetry">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Telemetry.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Telemetry.Adapter">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Telemetry.Adapter.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Telemetry.SerilogSink">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Telemetry.SerilogSink.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.TokenLogin">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.TokenLogin.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.UI.Common">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.UI.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.UpsCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.UpsCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.UpsRestCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.UpsRestCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.UspsCarrier">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.UspsCarrier.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.VertexService">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.VertexService.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Controls">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Controls.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Customization">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Customization.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Customization.Abstractions">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Customization.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Customization.Api">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Customization.Api.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Objects">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.ScreenToModernUIConverter">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.ScreenToModernUIConverter.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Site">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Site.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.Site.Pure">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.Site.Pure.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.UI">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.UI.Design">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.Design.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.UI.Frameset">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.Frameset.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.UI.Frameset.WebApi">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.Frameset.WebApi.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PX.Web.UI.Workflow">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.Workflow.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
