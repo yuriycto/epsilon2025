@@ -715,8 +715,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcumaticaAPIClient.cs" />
+    <Compile Include="DTO\SO.cs" />
     <Compile Include="POOrderentryExt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOOrderWebHook.cs" />
+    <Compile Include="SOOrdExt.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Acumatica.RESTClient\Acumatica.RESTClient.csproj">
@@ -725,5 +728,6 @@
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

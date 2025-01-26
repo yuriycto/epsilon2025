@@ -1,6 +1,4 @@
-﻿using Acumatica.RESTClient.Api;
-using Acumatica.RESTClient.AuthApi;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PX.Data;
 using PX.Objects.PO;
 using System;
@@ -20,7 +18,7 @@ namespace Epsilon2025
         {
             //string path = "https://hackathon.acumatica.com/Epsilon";
             string path = "https://localhost/Summit2025";
-            var client = new Acumatica.RESTClient.Client.ApiClient(path, ignoreSslErrors: true);
+            //var client = new Acumatica.RESTClient.Client.ApiClient(path, ignoreSslErrors: true);
 
             var poOrder = Base.Document.Current;
             if (poOrder == null)
@@ -38,46 +36,55 @@ namespace Epsilon2025
                 {
                     InventoryID = line.InventoryID, // Use InventoryID from the PO line
                     Quantity = line.OrderQty.GetValueOrDefault(), // Use the ordered quantity
-                    UnitPrice = line.CuryUnitCost.GetValueOrDefault() // Use the unit cost
+                    UnitPrice = line.CuryUnitCost.GetValueOrDefault(), // Use the unit cost
+                    UOM = line.UOM
                 });
             }
 
             var salesOrder = new
             {
                 OrderType = "SO", // Sales Order type
-                CustomerID = vendor.AcctCD.Trim(), // Map vendor as customer
+                CustomerID = vendor.BAccountID, // Map vendor as customer
                 OrderDate = DateTime.UtcNow.ToString("yyyy-MM-dd"),
-                //OrderDesc = poOrder.OrderDesc,
-                Details = new[]
-                {
-                    new
-                    {
-                        InventoryID = "A100", // Replace with actual InventoryID mapping logic
-                        Quantity = 1,
-                        UnitPrice = 100.00 // Replace with actual pricing logic
-                    }
-                }
+                OrderDesc = poOrder.OrderDesc,
+                Details = salesOrderLines.ToArray()
             };
 
-            var orderContent = new StringContent(JsonConvert.SerializeObject(salesOrder), Encoding.UTF8, "application/json");
+
+            string webHookUrl = path + "/Webhooks/Company/d402156b-27e0-4567-bf2c-c3090b7d0ed0";
+            string jsonPayload = JsonConvert.SerializeObject(salesOrder, Formatting.Indented);
 
 
-            List<KeyValuePair<string, string>> paramList = new List<KeyValuePair<string, string>> { };
+            PXLongOperation.StartOperation(Base,
+                () =>
+                {
 
-            //client.Login("admin", "team5carrot");
-            client.Login("admin", "123");
+                    using (HttpClient client = new HttpClient())
+                    {
+                        using (StringContent content =
+                               new StringContent(jsonPayload, Encoding.UTF8, "application/json"))
+                        {
+                            try
+                            {
+                                HttpResponseMessage response = client.PostAsync(webHookUrl, content).Result;
 
-            string callingPath = path + "/entity/Default/23.200.001" + "/SalesOrder";
+                                // Ensure the request was successful
+                                response.EnsureSuccessStatusCode();
 
-            PXLongOperation.StartOperation(Base, () =>
-            {
-                var t = client.CallApiAsync(path, HttpMethod.Put, paramList, orderContent, HeaderContentType.Json,
-                    HeaderContentType.Json).Result;
-                client.Logout();
-            }
-            );
+                                // Read and display the response body
+                                string responseBody = response.Content.ReadAsStringAsync().Result;
 
-            //PXLongOperation.WaitCompletion(Base.UID);
+                            }
+                            catch (AggregateException ex)
+                            {
+                                // Handle any errors that occurred during the request
+                                PXTrace.WriteError(ex);
+                            }
+                        }
+                    }
+
+                });
+
 
 
 
