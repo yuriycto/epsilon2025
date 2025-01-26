@@ -714,8 +714,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcumaticaAPIClient.cs" />
     <Compile Include="POOrderentryExt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Acumatica.RESTClient\Acumatica.RESTClient.csproj">
+      <Project>{c05503af-6f0e-422f-bd31-3b19b9c1e830}</Project>
+      <Name>Acumatica.RESTClient</Name>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

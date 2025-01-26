@@ -7,6 +7,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Summit2025", "https://local
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{753484d7-e383-4380-89b6-5efca57993e9}|Epsilon2025.dll;{C05503AF-6F0E-422F-BD31-3B19B9C1E830}|Acumatica.RESTClient.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Summit2025"
 		Debug.AspNetCompiler.PhysicalPath = "C:\Program Files\Acumatica ERP\Summit2025\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Summit2025\"
@@ -26,6 +27,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Summit2025", "https://local
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epsilon2025", "Epsilon2025\Epsilon2025.csproj", "{753484D7-E383-4380-89B6-5EFCA57993E9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acumatica.RESTClient", "Acumatica.RESTClient\Acumatica.RESTClient.csproj", "{C05503AF-6F0E-422F-BD31-3B19B9C1E830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,13 +36,16 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B15A2F52-D948-4062-9AC1-CB2D0C04744E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B15A2F52-D948-4062-9AC1-CB2D0C04744E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15A2F52-D948-4062-9AC1-CB2D0C04744E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{B15A2F52-D948-4062-9AC1-CB2D0C04744E}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{753484D7-E383-4380-89B6-5EFCA57993E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{753484D7-E383-4380-89B6-5EFCA57993E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753484D7-E383-4380-89B6-5EFCA57993E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753484D7-E383-4380-89B6-5EFCA57993E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05503AF-6F0E-422F-BD31-3B19B9C1E830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05503AF-6F0E-422F-BD31-3B19B9C1E830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05503AF-6F0E-422F-BD31-3B19B9C1E830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05503AF-6F0E-422F-BD31-3B19B9C1E830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
