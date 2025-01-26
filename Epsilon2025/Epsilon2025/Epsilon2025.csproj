@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Http, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\Microsoft.Extensions.Http.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\Newtonsoft.Json.dll</HintPath>
@@ -703,6 +707,9 @@
     <Reference Include="PX.Web.UI.Workflow">
       <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\PX.Web.UI.Workflow.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>C:\Program Files\Acumatica ERP\Summit2025\Bin\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

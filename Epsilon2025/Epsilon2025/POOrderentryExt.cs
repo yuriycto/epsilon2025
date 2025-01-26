@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json;
 using PX.Data;
 using PX.Objects.PO;
+using RestSharp;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
+using System.Threading;
 
 namespace Epsilon2025
 {
@@ -50,45 +51,73 @@ namespace Epsilon2025
                 Details = salesOrderLines.ToArray()
             };
 
+            var gr = Base;
 
-            string webHookUrl = path + "/Webhooks/Company/d402156b-27e0-4567-bf2c-c3090b7d0ed0";
-            string jsonPayload = JsonConvert.SerializeObject(salesOrder, Formatting.Indented);
-
-
-            PXLongOperation.StartOperation(Base,
+            var thr = new Thread(
                 () =>
                 {
+                    var obj = PrepareDocument(gr);
 
-                    using (HttpClient client = new HttpClient())
+                    string webHookUrl = path + "/Webhooks/Company/d402156b-27e0-4567-bf2c-c3090b7d0ed0";
+                    string jsonPayload = JsonConvert.SerializeObject(obj, Formatting.Indented);
+
+                    var resp = SendRequest(gr);
+
+                    if (!string.IsNullOrEmpty(resp.ErrorMessage))
                     {
-                        using (StringContent content =
-                               new StringContent(jsonPayload, Encoding.UTF8, "application/json"))
-                        {
-                            try
-                            {
-                                HttpResponseMessage response = client.PostAsync(webHookUrl, content).Result;
 
-                                // Ensure the request was successful
-                                response.EnsureSuccessStatusCode();
-
-                                // Read and display the response body
-                                string responseBody = response.Content.ReadAsStringAsync().Result;
-
-                            }
-                            catch (AggregateException ex)
-                            {
-                                // Handle any errors that occurred during the request
-                                PXTrace.WriteError(ex);
-                            }
-                        }
                     }
+                }
+            );
 
-                });
-
-
-
+            thr.Start();
+            thr.Join();
 
             return adapter.Get();
+        }
+
+        [InjectDependency]
+        private IHttpClientFactory _httpClientFactory { get; set; }
+
+        private RestResponse SendRequest(POOrderEntry graph)
+        {
+            var url = "https://localhost/Summit2025/Webhooks/Company/d402156b-27e0-4567-bf2c-c3090b7d0ed0";
+            var client = new RestClient(_httpClientFactory.CreateClient());
+            var request = new RestRequest(url, Method.Post);
+            var document = PrepareDocument(graph);
+            string json = JsonConvert.SerializeObject(document, Formatting.Indented);
+            request.AddJsonBody(json);
+            return client.Execute(request);
+        }
+
+        private object PrepareDocument(POOrderEntry graph)
+        {
+            var document = graph.Document.Current;
+            var lines = new List<object>();
+            foreach (POLine line in graph.Transactions.Select())
+            {
+                lines.Add(new
+                {
+                    line.InventoryID,
+                    line.UOM,
+                    line.OrderQty,
+                    line.CuryUnitCost,
+                    line.CuryInfoID
+                });
+            }
+
+            return new
+            {
+                OrderType = "SO",
+                document.VendorID,
+                document.OrderDate,
+                document.OrderDesc,
+                document.CuryInfoID,
+                document.CuryID,
+                document.BranchID,
+                Lines = lines
+            };
+
         }
     }
 }
